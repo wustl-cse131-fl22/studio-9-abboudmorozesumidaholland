@@ -20,8 +20,28 @@ public class NameToHeight {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		// FIXME
-		throw new NotYetImplementedException();
+		Map<String, Integer> NameToHeight = new HashMap<>();
+		
+		NameToHeight.put("Nadim", 71);
+		NameToHeight.put("Daniel", 34);
+	    NameToHeight.put("Ryan",48);
+		NameToHeight.put("Katie", 99);
+	    
+		boolean isTrue = true;
+		
+		while (isTrue == true) {
+			System.out.println("Name please:");
+			String Name = in.next();
+			System.out.println(NameToHeight.get(Name));
+			if (Name.equals("quit")) {
+				System.out.println("I'm done, I don't want to be around anymore");
+				System.out.println("This code is stolen, i cheated");
+				isTrue = false;
+			}
+		}
+		
 
+
+		
 	}
 }
